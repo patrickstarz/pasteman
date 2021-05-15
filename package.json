@@ -1,0 +1,44 @@
+{
+  "name": "pastes",
+  "version": "1.0.0",
+  "description": "A paste util built by Electron",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "standard --fix",
+    "build": "electron-builder -p never --config ./electron-builder.yml",
+    "package": "electron-forge package",
+    "make": "electron-forge make"
+  },
+  "author": "rickli(ricklei@yeah.net)",
+  "license": "MIT",
+  "dependencies": {
+    "auto-launch": "^5.0.5",
+    "lodash": "^4.17.20",
+    "lowdb": "^1.0.0",
+    "node-notifier": "^8.0.0",
+    "robotjs": "^0.6.0"
+  },
+  "devDependencies": {
+    "@electron-forge/cli": "^6.0.0-beta.54",
+    "electron": "^12.0.6",
+    "electron-rebuild": "^2.3.5",
+    "node-key-sender": "^1.0.11",
+    "standard": "^14.3.4"
+  },
+  "keywords": [
+    "electron-app",
+    "javascript",
+    "clipboard",
+    "paste",
+    "pastes",
+    "electron"
+  ],
+  "standard": {
+    "globals": [
+      "title",
+      "win"
+    ]
+  }
+}
